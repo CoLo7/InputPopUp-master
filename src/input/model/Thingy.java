@@ -12,13 +12,21 @@ public class Thingy
 	private int age;
 	private double weight;
 	
+	/**
+	 * Initializes the variables name, age, and weight and gives them values. 
+	 */
 	public Thingy()
 	{
 		name ="";
 		age = -99;
 		weight = -.008;
 	}
-	
+	/**
+	 * 
+	 * @param name
+	 * @param age
+	 * @param weight
+	 */
 	public Thingy(String name, int age, double weight)
 	{
 		//this. refers to the current instance of this object (A thingy)
@@ -38,6 +46,21 @@ public class Thingy
 	public double getWeight()
 	{
 		return weight; 
+	}
+	
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public void setWeight(double weight)
+	{
+		this.weight = weight;
 	}
 	
 }
